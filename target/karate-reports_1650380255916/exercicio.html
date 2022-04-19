@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>exercicio</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-04-19 11:45:05 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Consultar todos os usuários</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">exercicio.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Consulta de usuários</span>
+          <span class="feature-description">Como uma pessoa qualquer
+    Desejo consultar todos os usuários cadastrados
+    Para ter as informações de todos os usuários</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Consultar todos os usuários</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &quot;http://crud-api-academy.herokuapp.com/api/v1&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">11:45:05.003 exercicio.feature:7
+Given url &quot;http://crud-api-academy.herokuapp.com/api/v1&quot;
+&gt;&gt; exercicio.feature:6
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: ()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected =&gt; but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+&gt;&gt;&gt;&gt;
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: ()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected =&gt; but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path &quot;users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">11:45:05.008 exercicio.feature:8
+And path &quot;users&quot;
+&gt;&gt; exercicio.feature:6
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: ()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected =&gt; but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+&gt;&gt;&gt;&gt;
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: ()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected =&gt; but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">11:45:05.012 exercicio.feature:9
+When method get
+&gt;&gt; exercicio.feature:6
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: ()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected =&gt; but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+&gt;&gt;&gt;&gt;
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: ()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected =&gt; but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">11:45:05.017 exercicio.feature:10
+Then status 200
+&gt;&gt; exercicio.feature:6
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: ()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected =&gt; but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+&gt;&gt;&gt;&gt;
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: ()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected =&gt; but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

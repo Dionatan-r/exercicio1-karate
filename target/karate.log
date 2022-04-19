@@ -1,0 +1,3944 @@
+20:20:53.035 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+20:20:54.931 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://crud-api-academy.herokuapp.com/api/v1/users
+1 > Host: crud-api-academy.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:21:02.856 [main]  DEBUG com.intuit.karate - response time in milliseconds: 7920
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 189
+1 < Etag: W/"bd-x9feBiL34YxQAo9xz2u0yIAtPGI"
+1 < Date: Wed, 13 Apr 2022 23:21:02 GMT
+1 < Via: 1.1 vegur
+[{"id":"5071ebc3-d4f4-4668-a39f-62b8430822f5","name":"Miss Theresa Mertz","email":"Cecelia_Fahey@hotmail.com","createdAt":"2022-04-13T20:26:30.226Z","updatedAt":"2022-04-13T20:26:30.226Z"}]
+20:21:03.544 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) exercicio.feature
+20:30:05.569 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+20:30:05.796 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1649892605795
+20:30:07.182 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://crud-api-academy.herokuapp.com/api/v1/users
+1 > Host: crud-api-academy.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:30:07.730 [main]  DEBUG com.intuit.karate - response time in milliseconds: 543
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 189
+1 < Etag: W/"bd-x9feBiL34YxQAo9xz2u0yIAtPGI"
+1 < Date: Wed, 13 Apr 2022 23:30:07 GMT
+1 < Via: 1.1 vegur
+[{"id":"5071ebc3-d4f4-4668-a39f-62b8430822f5","name":"Miss Theresa Mertz","email":"Cecelia_Fahey@hotmail.com","createdAt":"2022-04-13T20:26:30.226Z","updatedAt":"2022-04-13T20:26:30.226Z"}]
+20:30:08.484 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) exercicio.feature
+11:45:03.742 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+11:45:04.042 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+11:45:04.046 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650379504043
+11:45:04.999 [main]  ERROR com.intuit.karate - exercicio.feature:7
+Given url "http://crud-api-academy.herokuapp.com/api/v1"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+11:45:05.003 [main]  ERROR com.intuit.karate - exercicio.feature:8
+And path "users"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+11:45:05.008 [main]  ERROR com.intuit.karate - exercicio.feature:9
+When method get
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+11:45:05.013 [main]  ERROR com.intuit.karate - exercicio.feature:10
+Then status 200
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+11:45:05.975 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+11:52:20.575 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+11:52:20.793 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: testes.feature - mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+11:53:29.787 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+11:53:29.937 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: testes.feature - mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+11:57:35.727 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+11:57:35.915 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+11:57:35.917 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650380255916
+11:57:36.689 [main]  ERROR com.intuit.karate - exercicio.feature:7
+Given url "https://petstore.swagger.io/v2"
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+11:57:36.694 [main]  ERROR com.intuit.karate - exercicio.feature:8
+And path "user"
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+11:57:36.699 [main]  ERROR com.intuit.karate - exercicio.feature:9
+* def userId = "13"
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+11:57:36.705 [main]  ERROR com.intuit.karate - exercicio.feature:10
+* def userName = "elidab"
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+11:57:36.711 [main]  ERROR com.intuit.karate - exercicio.feature:11
+* def userNameUpdate = "elidag"
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+11:57:36.715 [main]  ERROR com.intuit.karate - exercicio.feature:12
+* def payload = { id: 13, username: "elidab", firstName: "Élida", lastName: "Gonçalves", email: "elidab@example.com", password: "1234", phone: "9999-9999", userStatus: 0 }
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+11:57:36.720 [main]  ERROR com.intuit.karate - exercicio.feature:13
+* def payloadUpdate = { id: 14, username: "elidag", firstName: "Élida", lastName: "Gonçalves", email: "elidag@example.com", password: "4321", phone: "8888-8888", userStatus: 0 }
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+11:57:36.725 [main]  ERROR com.intuit.karate - exercicio.feature:16
+And request payload
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:16
+11:57:36.730 [main]  ERROR com.intuit.karate - exercicio.feature:17
+When method post
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:16
+exercicio.feature:17
+11:57:36.735 [main]  ERROR com.intuit.karate - exercicio.feature:18
+Then status 200
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:16
+exercicio.feature:17
+exercicio.feature:18
+11:57:36.741 [main]  ERROR com.intuit.karate - exercicio.feature:20
+And match response contains { code: 200, type: "unknown", message: "#(userId)"}
+>> exercicio.feature:15
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:16
+exercicio.feature:17
+exercicio.feature:18
+exercicio.feature:20
+11:57:36.757 [main]  ERROR com.intuit.karate - exercicio.feature:7
+Given url "https://petstore.swagger.io/v2"
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+11:57:36.762 [main]  ERROR com.intuit.karate - exercicio.feature:8
+And path "user"
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+11:57:36.767 [main]  ERROR com.intuit.karate - exercicio.feature:9
+* def userId = "13"
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+11:57:36.771 [main]  ERROR com.intuit.karate - exercicio.feature:10
+* def userName = "elidab"
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+11:57:36.776 [main]  ERROR com.intuit.karate - exercicio.feature:11
+* def userNameUpdate = "elidag"
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+11:57:36.780 [main]  ERROR com.intuit.karate - exercicio.feature:12
+* def payload = { id: 13, username: "elidab", firstName: "Élida", lastName: "Gonçalves", email: "elidab@example.com", password: "1234", phone: "9999-9999", userStatus: 0 }
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+11:57:36.785 [main]  ERROR com.intuit.karate - exercicio.feature:13
+* def payloadUpdate = { id: 14, username: "elidag", firstName: "Élida", lastName: "Gonçalves", email: "elidag@example.com", password: "4321", phone: "8888-8888", userStatus: 0 }
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+11:57:36.790 [main]  ERROR com.intuit.karate - exercicio.feature:23
+And path userName
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:23
+11:57:36.795 [main]  ERROR com.intuit.karate - exercicio.feature:24
+When method get
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:23
+exercicio.feature:24
+11:57:36.801 [main]  ERROR com.intuit.karate - exercicio.feature:25
+Then status 200
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:23
+exercicio.feature:24
+exercicio.feature:25
+11:57:36.808 [main]  ERROR com.intuit.karate - exercicio.feature:26
+And match response contains payload
+>> exercicio.feature:22
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:23
+exercicio.feature:24
+exercicio.feature:25
+exercicio.feature:26
+11:57:36.819 [main]  ERROR com.intuit.karate - exercicio.feature:7
+Given url "https://petstore.swagger.io/v2"
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+11:57:36.824 [main]  ERROR com.intuit.karate - exercicio.feature:8
+And path "user"
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+11:57:36.829 [main]  ERROR com.intuit.karate - exercicio.feature:9
+* def userId = "13"
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+11:57:36.833 [main]  ERROR com.intuit.karate - exercicio.feature:10
+* def userName = "elidab"
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+11:57:36.837 [main]  ERROR com.intuit.karate - exercicio.feature:11
+* def userNameUpdate = "elidag"
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+11:57:36.843 [main]  ERROR com.intuit.karate - exercicio.feature:12
+* def payload = { id: 13, username: "elidab", firstName: "Élida", lastName: "Gonçalves", email: "elidab@example.com", password: "1234", phone: "9999-9999", userStatus: 0 }
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+11:57:36.848 [main]  ERROR com.intuit.karate - exercicio.feature:13
+* def payloadUpdate = { id: 14, username: "elidag", firstName: "Élida", lastName: "Gonçalves", email: "elidag@example.com", password: "4321", phone: "8888-8888", userStatus: 0 }
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+11:57:36.879 [main]  ERROR com.intuit.karate - exercicio.feature:29
+And path userName
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:29
+11:57:36.883 [main]  ERROR com.intuit.karate - exercicio.feature:30
+And request payloadUpdate
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:29
+exercicio.feature:30
+11:57:36.888 [main]  ERROR com.intuit.karate - exercicio.feature:31
+When method put
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:29
+exercicio.feature:30
+exercicio.feature:31
+11:57:36.893 [main]  ERROR com.intuit.karate - exercicio.feature:32
+Then status 200
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:29
+exercicio.feature:30
+exercicio.feature:31
+exercicio.feature:32
+11:57:36.898 [main]  ERROR com.intuit.karate - exercicio.feature:34
+Given path "user"
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:29
+exercicio.feature:30
+exercicio.feature:31
+exercicio.feature:32
+exercicio.feature:34
+11:57:36.904 [main]  ERROR com.intuit.karate - exercicio.feature:35
+And path userNameUpdate
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:29
+exercicio.feature:30
+exercicio.feature:31
+exercicio.feature:32
+exercicio.feature:34
+exercicio.feature:35
+11:57:36.909 [main]  ERROR com.intuit.karate - exercicio.feature:36
+When method get
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:29
+exercicio.feature:30
+exercicio.feature:31
+exercicio.feature:32
+exercicio.feature:34
+exercicio.feature:35
+exercicio.feature:36
+11:57:36.914 [main]  ERROR com.intuit.karate - exercicio.feature:37
+Then status 200
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:29
+exercicio.feature:30
+exercicio.feature:31
+exercicio.feature:32
+exercicio.feature:34
+exercicio.feature:35
+exercicio.feature:36
+exercicio.feature:37
+11:57:36.919 [main]  ERROR com.intuit.karate - exercicio.feature:38
+And match response contains payloadUpdate
+>> exercicio.feature:28
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+exercicio.feature:11
+exercicio.feature:12
+exercicio.feature:13
+exercicio.feature:29
+exercicio.feature:30
+exercicio.feature:31
+exercicio.feature:32
+exercicio.feature:34
+exercicio.feature:35
+exercicio.feature:36
+exercicio.feature:37
+exercicio.feature:38
+11:57:37.852 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+11:58:28.182 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+11:58:28.364 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+11:58:28.366 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650380308365
+11:58:28.972 [main]  ERROR com.intuit.karate - exercicio.feature:7
+Given url "http://crud-api-academy.herokuapp.com/api/v1"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+11:58:28.976 [main]  ERROR com.intuit.karate - exercicio.feature:8
+And path "users"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+11:58:28.981 [main]  ERROR com.intuit.karate - exercicio.feature:9
+When method get
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+11:58:28.986 [main]  ERROR com.intuit.karate - exercicio.feature:10
+Then status 200
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+11:58:29.576 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+11:59:37.486 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+11:59:37.659 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+11:59:37.661 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650380377660
+11:59:38.242 [main]  ERROR com.intuit.karate - exercicio.feature:7
+Given url "http://crud-api-academy.herokuapp.com/api/v1"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+11:59:38.249 [main]  ERROR com.intuit.karate - exercicio.feature:8
+And path "users"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+11:59:38.253 [main]  ERROR com.intuit.karate - exercicio.feature:9
+When method get
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+11:59:38.258 [main]  ERROR com.intuit.karate - exercicio.feature:10
+Then status 200
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+11:59:38.894 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:00:10.264 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:00:10.476 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+12:00:10.478 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650380410476
+12:00:11.244 [main]  ERROR com.intuit.karate - exercicio.feature:7
+Given url "http://crud-api-academy.herokuapp.com/api/v2"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+12:00:11.248 [main]  ERROR com.intuit.karate - exercicio.feature:8
+And path "users"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+12:00:11.253 [main]  ERROR com.intuit.karate - exercicio.feature:9
+When method get
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+12:00:11.259 [main]  ERROR com.intuit.karate - exercicio.feature:10
+Then status 200
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+12:00:12.053 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:02:45.808 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:02:45.982 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+12:02:45.985 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650380565984
+12:02:46.608 [main]  ERROR com.intuit.karate - exercicio.feature:7
+Given url "http://crud-api-academy.herokuapp.com/api/v2"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+12:02:46.612 [main]  ERROR com.intuit.karate - exercicio.feature:8
+And path "users"
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+12:02:46.616 [main]  ERROR com.intuit.karate - exercicio.feature:9
+When method get
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+12:02:46.621 [main]  ERROR com.intuit.karate - exercicio.feature:10
+Then status 200
+>> exercicio.feature:6
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+>>>>
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: ()
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:2 Expected => but found eof
+()
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.util.Iterator.forEachRemaining(Unknown Source)
+
+exercicio.feature:7
+exercicio.feature:8
+exercicio.feature:9
+exercicio.feature:10
+12:02:47.333 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:03:33.520 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:03:33.711 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650380613710
+12:03:34.834 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://crud-api-academy.herokuapp.com/api/v2/users
+1 > Host: crud-api-academy.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:03:35.383 [main]  DEBUG com.intuit.karate - response time in milliseconds: 546
+1 < 404
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Security-Policy: default-src 'none'
+1 < X-Content-Type-Options: nosniff
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 151
+1 < Date: Tue, 19 Apr 2022 15:03:33 GMT
+1 < Via: 1.1 vegur
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/v2/users</pre>
+</body>
+</html>
+
+12:03:35.389 [main]  ERROR com.intuit.karate - exercicio.feature:10
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 546, url: http://crud-api-academy.herokuapp.com/api/v2/users, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/v2/users</pre>
+</body>
+</html>
+
+exercicio.feature:10
+12:03:36.055 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:04:13.129 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:04:13.301 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650380653300
+12:04:14.309 [main]  ERROR com.intuit.karate - org.apache.http.ProtocolException: Target host is not specified, http call failed after 390 milliseconds for url: /crud-api-academy.herokuapp.com/api/v1/users
+12:04:14.310 [main]  ERROR com.intuit.karate - exercicio.feature:9
+When method get
+http call failed after 390 milliseconds for url: /crud-api-academy.herokuapp.com/api/v1/users
+exercicio.feature:9
+12:04:14.845 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:06:09.920 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:06:10.096 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650380770095
+12:06:11.149 [main]  ERROR com.intuit.karate - org.apache.http.ProtocolException: Target host is not specified, http call failed after 433 milliseconds for url: /crud-api-academy.herokuapp.com/api/v1/users
+12:06:11.150 [main]  ERROR com.intuit.karate - exercicio.feature:9
+When method get
+http call failed after 433 milliseconds for url: /crud-api-academy.herokuapp.com/api/v1/users
+exercicio.feature:9
+12:06:11.685 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:17:50.500 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:29:40.950 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:29:41.127 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650382181126
+12:29:42.271 [main]  ERROR com.intuit.karate - org.apache.http.ProtocolException: Target host is not specified, http call failed after 470 milliseconds for url: /crud-api-academy.herokuapp.com/api/v1/users
+12:29:42.272 [main]  ERROR com.intuit.karate - exercicio.feature:9
+When method get
+http call failed after 470 milliseconds for url: /crud-api-academy.herokuapp.com/api/v1/users
+exercicio.feature:9
+12:29:42.904 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:35:22.219 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:35:22.398 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650382522397
+12:35:23.585 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:35:24.267 [main]  DEBUG com.intuit.karate - response time in milliseconds: 677
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:35:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183454,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:35:24.989 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) exercicio.feature
+12:40:21.524 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:40:21.701 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650382821700
+12:40:22.810 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:40:23.620 [main]  DEBUG com.intuit.karate - response time in milliseconds: 807
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:40:21 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183552,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:40:24.254 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) exercicio.feature
+12:40:49.462 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:40:49.639 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650382849638
+12:40:50.697 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:40:51.278 [main]  DEBUG com.intuit.karate - response time in milliseconds: 578
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:40:49 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183555,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:40:51.305 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/id/1
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:40:51.715 [main]  DEBUG com.intuit.karate - response time in milliseconds: 408
+1 < 404
+1 < Date: Tue, 19 Apr 2022 15:40:49 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 169
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/1</message><type>unknown</type></apiResponse>
+12:40:51.733 [main]  ERROR com.intuit.karate - exercicio.feature:46
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 408, url: https://petstore.swagger.io/v2/id/1, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/1</message><type>unknown</type></apiResponse>
+exercicio.feature:46
+12:40:52.314 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:42:00.060 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:42:00.240 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650382920239
+12:42:01.276 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:42:02.187 [main]  DEBUG com.intuit.karate - response time in milliseconds: 909
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:42:00 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183556,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:42:02.211 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/id/0
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:42:02.679 [main]  DEBUG com.intuit.karate - response time in milliseconds: 466
+1 < 404
+1 < Date: Tue, 19 Apr 2022 15:42:00 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 169
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/0</message><type>unknown</type></apiResponse>
+12:42:02.688 [main]  ERROR com.intuit.karate - exercicio.feature:46
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 466, url: https://petstore.swagger.io/v2/id/0, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/0</message><type>unknown</type></apiResponse>
+exercicio.feature:46
+12:42:03.204 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:43:48.757 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:43:48.940 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650383028939
+12:43:50.014 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:43:50.710 [main]  DEBUG com.intuit.karate - response time in milliseconds: 693
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:43:48 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183583,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:43:50.739 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/id/9.2229681404971827E18
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:43:51.151 [main]  DEBUG com.intuit.karate - response time in milliseconds: 411
+1 < 404
+1 < Date: Tue, 19 Apr 2022 15:43:49 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 189
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/9.2229681404971827E18</message><type>unknown</type></apiResponse>
+12:43:51.161 [main]  ERROR com.intuit.karate - exercicio.feature:46
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 411, url: https://petstore.swagger.io/v2/id/9.2229681404971827E18, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/9.2229681404971827E18</message><type>unknown</type></apiResponse>
+exercicio.feature:46
+12:43:51.732 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:45:26.084 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:45:26.269 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650383126268
+12:45:27.324 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:45:28.242 [main]  DEBUG com.intuit.karate - response time in milliseconds: 916
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:45:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183595,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:45:28.259 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/id/9.2229681404971827E18
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:45:28.682 [main]  DEBUG com.intuit.karate - response time in milliseconds: 422
+1 < 404
+1 < Date: Tue, 19 Apr 2022 15:45:26 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 189
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/9.2229681404971827E18</message><type>unknown</type></apiResponse>
+12:45:28.692 [main]  ERROR com.intuit.karate - exercicio.feature:47
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 422, url: https://petstore.swagger.io/v2/id/9.2229681404971827E18, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/9.2229681404971827E18</message><type>unknown</type></apiResponse>
+exercicio.feature:47
+12:45:29.303 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:48:29.089 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:48:29.268 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650383309267
+12:48:30.387 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:48:31.091 [main]  DEBUG com.intuit.karate - response time in milliseconds: 700
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:48:29 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183663,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:48:31.106 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/id/9.2229681404971827E18
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:48:31.628 [main]  DEBUG com.intuit.karate - response time in milliseconds: 520
+1 < 404
+1 < Date: Tue, 19 Apr 2022 15:48:29 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 189
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/9.2229681404971827E18</message><type>unknown</type></apiResponse>
+12:48:31.638 [main]  ERROR com.intuit.karate - exercicio.feature:47
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 520, url: https://petstore.swagger.io/v2/id/9.2229681404971827E18, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><message>null for uri: http://petstore.swagger.io/v2/id/9.2229681404971827E18</message><type>unknown</type></apiResponse>
+exercicio.feature:47
+12:48:32.264 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:48:38.727 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:48:38.906 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650383318905
+12:48:39.935 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:48:40.617 [main]  DEBUG com.intuit.karate - response time in milliseconds: 678
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:48:38 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183664,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:48:40.631 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/9.2229681404971827E18
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:48:41.103 [main]  DEBUG com.intuit.karate - response time in milliseconds: 471
+1 < 404
+1 < Date: Tue, 19 Apr 2022 15:48:39 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+12:48:41.105 [main]  ERROR com.intuit.karate - exercicio.feature:47
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 471, url: https://petstore.swagger.io/v2/pet/9.2229681404971827E18, response: 
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+exercicio.feature:47
+12:48:41.668 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:49:13.165 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:49:13.349 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650383353348
+12:49:14.411 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:49:14.990 [main]  DEBUG com.intuit.karate - response time in milliseconds: 576
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:49:13 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183670,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:49:15.003 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/9.2229681404971827E18
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:49:15.436 [main]  DEBUG com.intuit.karate - response time in milliseconds: 431
+1 < 404
+1 < Date: Tue, 19 Apr 2022 15:49:13 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+12:49:15.439 [main]  ERROR com.intuit.karate - exercicio.feature:47
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 431, url: https://petstore.swagger.io/v2/pet/9.2229681404971827E18, response: 
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+exercicio.feature:47
+12:49:16.057 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:50:57.066 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:50:57.248 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650383457247
+12:50:58.303 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:50:59.093 [main]  DEBUG com.intuit.karate - response time in milliseconds: 787
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:50:57 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183719,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:50:59.121 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/9.2229681404971827E18
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:51:00.432 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1310
+1 < 404
+1 < Date: Tue, 19 Apr 2022 15:50:58 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+12:51:00.435 [main]  ERROR com.intuit.karate - exercicio.feature:47
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 1310, url: https://petstore.swagger.io/v2/pet/9.2229681404971827E18, response: 
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+exercicio.feature:47
+12:51:00.963 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+12:51:24.528 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+12:51:24.705 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650383484704
+12:51:25.767 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+12:51:26.452 [main]  DEBUG com.intuit.karate - response time in milliseconds: 683
+1 < 200
+1 < Date: Tue, 19 Apr 2022 15:51:24 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183720,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+12:51:26.465 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/9.2229681404971827E18
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:51:26.870 [main]  DEBUG com.intuit.karate - response time in milliseconds: 404
+1 < 404
+1 < Date: Tue, 19 Apr 2022 15:51:25 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+12:51:26.873 [main]  ERROR com.intuit.karate - exercicio.feature:47
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 404, url: https://petstore.swagger.io/v2/pet/9.2229681404971827E18, response: 
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+exercicio.feature:47
+12:51:27.516 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+13:00:46.850 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+13:00:47.063 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650384047062
+13:00:48.486 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+13:00:50.304 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1815
+1 < 200
+1 < Date: Tue, 19 Apr 2022 16:00:48 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183903,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+13:00:50.315 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/9.2229681404971827E18
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:00:50.843 [main]  DEBUG com.intuit.karate - response time in milliseconds: 527
+1 < 404
+1 < Date: Tue, 19 Apr 2022 16:00:49 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+13:00:50.845 [main]  ERROR com.intuit.karate - exercicio.feature:47
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 527, url: https://petstore.swagger.io/v2/pet/9.2229681404971827E18, response: 
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+exercicio.feature:47
+13:00:51.717 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+13:03:05.307 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+13:03:05.488 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650384185487
+13:03:06.579 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+13:03:07.385 [main]  DEBUG com.intuit.karate - response time in milliseconds: 802
+1 < 200
+1 < Date: Tue, 19 Apr 2022 16:03:05 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183925,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+13:03:07.398 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/155
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:03:07.897 [main]  DEBUG com.intuit.karate - response time in milliseconds: 498
+1 < 200
+1 < Date: Tue, 19 Apr 2022 16:03:06 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":155,"category":{"id":0,"name":"string"},"name":"elma chips","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+13:03:08.459 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) exercicio.feature
+13:04:45.956 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+13:04:46.132 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650384286131
+13:04:47.218 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+13:04:47.939 [main]  DEBUG com.intuit.karate - response time in milliseconds: 718
+1 < 200
+1 < Date: Tue, 19 Apr 2022 16:04:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183950,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+13:04:47.949 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/9222968140497183000
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:04:48.515 [main]  DEBUG com.intuit.karate - response time in milliseconds: 565
+1 < 200
+1 < Date: Tue, 19 Apr 2022 16:04:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497183000,"category":{"id":0,"name":"string"},"name":"peter","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+13:04:49.079 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) exercicio.feature
+13:07:26.324 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+13:07:26.506 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650384446505
+13:07:27.613 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+13:07:28.539 [main]  DEBUG com.intuit.karate - response time in milliseconds: 922
+1 < 200
+1 < Date: Tue, 19 Apr 2022 16:07:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497184001,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+13:07:28.581 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/9.2229681404971827E18
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:07:29.146 [main]  DEBUG com.intuit.karate - response time in milliseconds: 564
+1 < 404
+1 < Date: Tue, 19 Apr 2022 16:07:27 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+13:07:29.149 [main]  ERROR com.intuit.karate - exercicio.feature:47
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 564, url: https://petstore.swagger.io/v2/pet/9.2229681404971827E18, response: 
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"9.2229681404971827E18\""}
+exercicio.feature:47
+13:07:29.676 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+13:10:47.692 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+13:10:47.868 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650384647868
+13:10:49.002 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+13:10:50.021 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1016
+1 < 200
+1 < Date: Tue, 19 Apr 2022 16:10:48 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497184051,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+13:10:50.033 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/9222968140497183000
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:10:50.504 [main]  DEBUG com.intuit.karate - response time in milliseconds: 470
+1 < 404
+1 < Date: Tue, 19 Apr 2022 16:10:48 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"Pet not found"}
+13:10:50.511 [main]  ERROR com.intuit.karate - exercicio.feature:46
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 470, url: https://petstore.swagger.io/v2/pet/9222968140497183000, response: 
+{"code":1,"type":"error","message":"Pet not found"}
+exercicio.feature:46
+13:10:51.062 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) exercicio.feature
+13:11:50.257 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+13:11:50.436 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1650384710435
+13:11:51.536 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 138
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+13:11:52.211 [main]  DEBUG com.intuit.karate - response time in milliseconds: 672
+1 < 200
+1 < Date: Tue, 19 Apr 2022 16:11:50 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9222968140497184076,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+13:11:52.223 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/155
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_331)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:11:52.745 [main]  DEBUG com.intuit.karate - response time in milliseconds: 520
+1 < 200
+1 < Date: Tue, 19 Apr 2022 16:11:50 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":155,"category":{"id":0,"name":"string"},"name":"elma chips","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+13:11:53.363 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) exercicio.feature
